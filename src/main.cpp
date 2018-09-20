@@ -87,7 +87,7 @@ void game(int &argc, char * argv[])
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-	glutCreateWindow("LIFE 0.01");
+	glutCreateWindow("Life");
 	glutReshapeFunc(r);
 	glutDisplayFunc(d);
 	glutIdleFunc(d);
