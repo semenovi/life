@@ -1,7 +1,7 @@
 #pragma once
 #include <GL/glut.h>
 #include <stdio.h>
-const int WINDOW_WIDTH = 1200, WINDOW_HEIGHT = 900, CELL_SIZE = 12;
+const int WINDOW_WIDTH = 600, WINDOW_HEIGHT = 300, CELL_SIZE = 12;
 //X_NUMBER_OF_CELLS = 40, Y_NUMBER_OF_CELLS = 30;
 class Area
 {
