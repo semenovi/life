@@ -1,5 +1,5 @@
-#include "area.h"
-int ** area::allocate_matrix_int(int _w, int _h)
+#include "container.h"
+int ** container::allocate_matrix_int(int _w, int _h)
 {
 	if (_w < 0 || _h < 0) throw 0;
 	int ** _memory = new int*[_w];
@@ -11,14 +11,29 @@ int ** area::allocate_matrix_int(int _w, int _h)
 	}
 	return _memory;
 }
-void area::deallocate_matrix_int(int ** _memory, int _w, int _h)
+void container::deallocate_matrix_int(int ** _memory, int _w, int _h)
 {
 	if (_w < 0 || _h < 0 || _memory == nullptr) throw 0;
 	for (int i = 0; i < _w; i++)
 		delete[] _memory[i];
 	delete[] _memory;
 }
-area::area(int _w, int _h)
+int container::sum_to_conway(int _sum, int _current)
+{
+	switch (_current)
+	{
+	case 0:
+		if (_sum == 3)
+			return 1;
+		break;
+	case 1:
+		if (_sum == 2 || _sum == 3)
+			return 1;
+		break;
+	}
+	return 0;
+}
+container::container(int _w, int _h)
 {
 	if (_w < 0 || _h < 0) throw 0;
 	w = _w;
@@ -26,139 +41,121 @@ area::area(int _w, int _h)
 	sheet = allocate_matrix_int(w, h);
 	next_sheet = allocate_matrix_int(w, h);
 }
-void area::change_cell_state(int _x, int _y, int _state)
+void container::change_cell_state(int _x, int _y, int _state)
 {
-	if (_state < 0
-		|| _state > 1
-		|| _x > w
-		|| _y > h
-		|| _x < 0
-		|| _y < 0) throw 0;
+	if (_state < 0 || _state > 1 || _x > w || _y > h || _x < 0 || _y < 0) throw 0;
 	sheet[_x][_y] = _state;
 }
-int area::get_cell_state(int _x, int _y)
+int container::get_cell_state(int _x, int _y)
 {
-	if (_x > w
-		|| _y > h
-		|| _x < 0
-		|| _y < 0) throw 0;
+	if (_x > w || _y > h || _x < 0 || _y < 0) throw 0;
 	return sheet[_x][_y];
 }
-int area::get_cell_state_in_next_generation(int _x, int _y)
+int container::get_cell_state_in_next_generation(int _x, int _y)
 {//stupid, but work
 	int sum_current = 0;
 	if (_y < 1)
-	{//bottom
-		if (_y < 1)
+	{//top
+		if (_x < 1)
 		{//left
 			sum_current = (
-				get_cell_state(_y + 1, _y) +
-				get_cell_state(_y + 1, _y + 1) +
-				get_cell_state(_y, _y + 1)
+				get_cell_state(_x + 1, _y) +
+				get_cell_state(_x + 1, _y + 1) +
+				get_cell_state(_x, _y + 1)
 				);
 		}
-		else if (_y > h - 2)
+		else if (_x > w - 2)
 		{//right
 			sum_current = (
-				get_cell_state(_y - 1, _y) +
-				get_cell_state(_y - 1, _y + 1) +
-				get_cell_state(_y, _y + 1)
+				get_cell_state(_x - 1, _y) +
+				get_cell_state(_x - 1, _y + 1) +
+				get_cell_state(_x, _y + 1)
 				);
 		}
 		else
 		{//center
 			sum_current = (
-				get_cell_state(_y - 1, _y) +
-				get_cell_state(_y + 1, _y) +
-				get_cell_state(_y, _y + 1) +
-				get_cell_state(_y + 1, _y + 1) +
-				get_cell_state(_y - 1, _y + 1)
+				get_cell_state(_x - 1, _y) +
+				get_cell_state(_x + 1, _y) +
+				get_cell_state(_x, _y + 1) +
+				get_cell_state(_x + 1, _y + 1) +
+				get_cell_state(_x - 1, _y + 1)
 				);
 		}
 	}
 	else if (_y > h - 2)
-	{//top
-		if (_y < 1)
+	{//bottom
+		if (_x < 1)
 		{//left
 			sum_current = (
-				get_cell_state(_y + 1, _y) +
-				get_cell_state(_y, _y - 1) +
-				get_cell_state(_y + 1, _y - 1)
+				get_cell_state(_x + 1, _y) +
+				get_cell_state(_x, _y - 1) +
+				get_cell_state(_x + 1, _y - 1)
 				);
 		}
-		else if (_y > w - 2)
+		else if (_x > w - 2)
 		{//right
 			sum_current = (
-				get_cell_state(_y - 1, _y) +
-				get_cell_state(_y, _y - 1) +
-				get_cell_state(_y - 1, _y - 1)
+				get_cell_state(_x - 1, _y) +
+				get_cell_state(_x, _y - 1) +
+				get_cell_state(_x - 1, _y - 1)
 				);
 		}
 		else
 		{//center
 			sum_current = (
-				get_cell_state(_y - 1, _y) +
-				get_cell_state(_y + 1, _y) +
-				get_cell_state(_y - 1, _y - 1) +
-				get_cell_state(_y, _y - 1) +
-				get_cell_state(_y + 1, _y - 1)
+				get_cell_state(_x - 1, _y) +
+				get_cell_state(_x + 1, _y) +
+				get_cell_state(_x - 1, _y - 1) +
+				get_cell_state(_x, _y - 1) +
+				get_cell_state(_x + 1, _y - 1)
 				);
 		}
 	}
 	else
 	{//center
-		if (_y < 1)
+		if (_x < 1)
 		{//left
 			sum_current = (
-				get_cell_state(_y, _y + 1) +
-				get_cell_state(_y, _y - 1) +
-				get_cell_state(_y + 1, _y - 1) +
-				get_cell_state(_y + 1, _y) +
-				get_cell_state(_y + 1, _y + 1)
+				get_cell_state(_x, _y + 1) +
+				get_cell_state(_x, _y - 1) +
+				get_cell_state(_x + 1, _y - 1) +
+				get_cell_state(_x + 1, _y) +
+				get_cell_state(_x + 1, _y + 1)
 				);
 		}
-		else if (_y > w - 2)
+		else if (_x > w - 2)
 		{//right
 			sum_current = (
-				get_cell_state(_y, _y + 1) +
-				get_cell_state(_y, _y - 1) +
-				get_cell_state(_y - 1, _y - 1) +
-				get_cell_state(_y - 1, _y) +
-				get_cell_state(_y - 1, _y + 1)
+				get_cell_state(_x, _y + 1) +
+				get_cell_state(_x, _y - 1) +
+				get_cell_state(_x - 1, _y - 1) +
+				get_cell_state(_x - 1, _y) +
+				get_cell_state(_x - 1, _y + 1)
 				);
 		}
 		else
 		{//center
 			sum_current = (
-				get_cell_state(_y, _y + 1) +
-				get_cell_state(_y, _y - 1) +
-				get_cell_state(_y - 1, _y - 1) +
-				get_cell_state(_y - 1, _y) +
-				get_cell_state(_y - 1, _y + 1) +
-				get_cell_state(_y + 1, _y - 1) +
-				get_cell_state(_y + 1, _y) +
-				get_cell_state(_y + 1, _y + 1)
+				get_cell_state(_x, _y + 1) +
+				get_cell_state(_x, _y - 1) +
+				get_cell_state(_x - 1, _y - 1) +
+				get_cell_state(_x - 1, _y) +
+				get_cell_state(_x - 1, _y + 1) +
+				get_cell_state(_x + 1, _y - 1) +
+				get_cell_state(_x + 1, _y) +
+				get_cell_state(_x + 1, _y + 1)
 				);
 		}
 	}
-	if (sheet[_x][_y] == 0)
-	{
-		if (sum_current == 3)
-			return 1;
-		return 0;
-	}
-	else if (sheet[_x][_y] == 1)
-	{
-		if (sum_current == 3 || sum_current == 2)
-			return 1;
-		return 0;
-	}
+	return(sum_to_conway(sum_current, sheet[_x][_y]));
 }
-void area::apply_next_generation()
+void container::apply_next_generation()
 {
 	for (int i = 0; i < w; i++)
 		for (int j = 0; j < h; j++)
 			next_sheet[i][j] = get_cell_state_in_next_generation(i, j);
 	for (int i = 0; i < w; i++)
-		std::copy(next_sheet[i], next_sheet[w] + 1, sheet[i]);
+		for (int j = 0; j < h; j++)
+			sheet[i][j] = next_sheet[i][j];
 }

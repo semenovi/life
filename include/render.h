@@ -1,30 +1,34 @@
 #ifndef DRAWER_H
 #define DRAWER_H
 
-#include "area.h"
+#include "container.h"
 
-#pragma comment(lib, "Opengl32.lib")
-#include <gl/GL.h>
+// for opengl
+#include <windows.h>
+#include <tchar.h>
+#include <gl\gl.h>
+#include <gl\glu.h>
 
-#include <iostream>
+// for cmd
 #include <conio.h>
-#include <Windows.h>
+#include <iostream>
+
 class using_opengl
 {
 private:
-	area * area_link;
-	void draw_cells();
-	void draw_grid();
+
 public:
-	using_opengl(area * _area_link) :area_link(_area_link)
-	{};
+	using_opengl() {};
 };
 class to_command_line
 {
 private:
-	area * area_link;
-	void draw_cells(int _cursor);
+	container * container_link;
+	int x_cursor, y_cursor;
+	int input_reaction(int _in);
+	void print_cells();
 public:
-	printer(area * _area_link) :area_link(_area_link) {};
+	to_command_line(container * link) : container_link(link), x_cursor(0), y_cursor(0) {};
+	void start();
 };
 #endif
