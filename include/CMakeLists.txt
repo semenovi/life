@@ -1,6 +1,0 @@
-cmake_minimum_required (VERSION 2.6)
-project(life_lib)
-set(SOURCES container.cpp render.cpp)
-set(HEADERS container.h render.h)
-add_library(life_lib ${SOURCES} ${HEADERS})
-target_include_directories(life_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
