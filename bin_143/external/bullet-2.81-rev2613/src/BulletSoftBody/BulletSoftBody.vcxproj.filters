@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftRigidCollisionAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftRigidDynamicsWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftSoftCollisionAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btDefaultSoftBodySolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftRigidCollisionAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftRigidDynamicsWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftSoftCollisionAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSparseSDF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodySolvers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btDefaultSoftBodySolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\btSoftBodySolverVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\documents\ivan\pr\cpp\life\external\bullet-2.81-rev2613\src\BulletSoftBody\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5C3E8346-3C23-34BE-9169-9AB5C2291D93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{475276C1-7B96-338A-8C74-2202BCA2198A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

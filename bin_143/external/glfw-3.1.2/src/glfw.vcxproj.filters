@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_tls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\winmm_joystick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\wgl_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\src\glfw_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\include\GLFW\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\include\GLFW\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\win32_tls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\winmm_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\wgl_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5C3E8346-3C23-34BE-9169-9AB5C2291D93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{475276C1-7B96-338A-8C74-2202BCA2198A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

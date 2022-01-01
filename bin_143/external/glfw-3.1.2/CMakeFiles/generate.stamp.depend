@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+D:/Program files/CMake/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckIncludeFile.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckLibraryExists.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindDoxygen.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindOpenGL.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindPackageMessage.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindThreads.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake
+D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/CMakeLists.txt
+D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/cmake_uninstall.cmake.in
+D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/docs/Doxyfile.in
+D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/src/glfw3.pc.in
+D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/src/glfw3Config.cmake.in
+D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/src/glfw_config.h.in

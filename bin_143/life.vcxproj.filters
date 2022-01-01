@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\documents\ivan\pr\cpp\life\common\shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\documents\ivan\pr\cpp\life\common\shader.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\documents\ivan\pr\cpp\life\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\documents\ivan\pr\cpp\life\FragmentShader.fragmentshader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="D:\documents\ivan\pr\cpp\life\VertexShader.vertexshader">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{475276C1-7B96-338A-8C74-2202BCA2198A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{59D2324C-914E-37C0-A305-29D0AD92CCFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{41296DF4-7785-375C-B2F3-ADFC4E1D379E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckFunctionExists.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckIncludeFile.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckIncludeFileCXX.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CheckTypeSize.cmake
+D:/documents/ivan/pr/cpp/life/external/CMakeLists.txt

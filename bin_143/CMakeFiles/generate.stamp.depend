@@ -1,0 +1,32 @@
+# CMake generation dependency list for this directory.
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeCInformation.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeCXXInformation.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeGenericSystem.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeRCInformation.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Compiler/MSVC-C.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Compiler/MSVC-CXX.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindOpenGL.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/FindPackageMessage.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Platform/Windows-MSVC-C.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Platform/Windows-MSVC.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Platform/Windows.cmake
+D:/Program files/CMake/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake
+D:/documents/ivan/pr/cpp/life/CMakeLists.txt
+D:/documents/ivan/pr/cpp/life/bin_143/CMakeFiles/3.22.1/CMakeCCompiler.cmake
+D:/documents/ivan/pr/cpp/life/bin_143/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake
+D:/documents/ivan/pr/cpp/life/bin_143/CMakeFiles/3.22.1/CMakeRCCompiler.cmake
+D:/documents/ivan/pr/cpp/life/bin_143/CMakeFiles/3.22.1/CMakeSystem.cmake
+D:/documents/ivan/pr/cpp/life/external/rpavlik-cmake-modules-fe2273/CleanDirectoryList.cmake
+D:/documents/ivan/pr/cpp/life/external/rpavlik-cmake-modules-fe2273/CreateLaunchers.cmake
+D:/documents/ivan/pr/cpp/life/external/rpavlik-cmake-modules-fe2273/ListCombinations.cmake
+D:/documents/ivan/pr/cpp/life/external/rpavlik-cmake-modules-fe2273/MSVCMultipleProcessCompile.cmake
+D:/documents/ivan/pr/cpp/life/external/rpavlik-cmake-modules-fe2273/launcher-templates/targetlauncher.cmd.in
+D:/documents/ivan/pr/cpp/life/external/rpavlik-cmake-modules-fe2273/launcher-templates/vcxproj.user.in

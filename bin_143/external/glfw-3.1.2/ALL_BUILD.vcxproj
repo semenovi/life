@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF12EDAC-810D-3F74-ACC8-7A936D2ADD4F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program files\CMake\bin\cmake.exe" -SD:/documents/ivan/pr/cpp/life -BD:/documents/ivan/pr/cpp/life/bin_143 --check-stamp-file D:/documents/ivan/pr/cpp/life/bin_143/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindOpenGL.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\docs\Doxyfile.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3.pc.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program files\CMake\bin\cmake.exe" -SD:/documents/ivan/pr/cpp/life -BD:/documents/ivan/pr/cpp/life/bin_143 --check-stamp-file D:/documents/ivan/pr/cpp/life/bin_143/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindOpenGL.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\docs\Doxyfile.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3.pc.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program files\CMake\bin\cmake.exe" -SD:/documents/ivan/pr/cpp/life -BD:/documents/ivan/pr/cpp/life/bin_143 --check-stamp-file D:/documents/ivan/pr/cpp/life/bin_143/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindOpenGL.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\docs\Doxyfile.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3.pc.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/documents/ivan/pr/cpp/life/external/glfw-3.1.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program files\CMake\bin\cmake.exe" -SD:/documents/ivan/pr/cpp/life -BD:/documents/ivan/pr/cpp/life/bin_143 --check-stamp-file D:/documents/ivan/pr/cpp/life/bin_143/external/glfw-3.1.2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Program files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindDoxygen.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindOpenGL.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\cmake_uninstall.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\docs\Doxyfile.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3.pc.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw3Config.cmake.in;D:\documents\ivan\pr\cpp\life\external\glfw-3.1.2\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\ZERO_CHECK.vcxproj">
+      <Project>{55704638-F075-387D-9799-F1D2649D3C8E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\boing.vcxproj">
+      <Project>{6E09FB44-BC40-37C8-9F60-3139E90127DC}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\clipboard.vcxproj">
+      <Project>{09D85433-2CB6-350E-8D55-9067FDCF777B}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\cursor.vcxproj">
+      <Project>{9F221B1D-B3AD-3952-A682-31D945188962}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\empty.vcxproj">
+      <Project>{89930958-0E0A-3C23-871F-9F24A33F0D50}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\events.vcxproj">
+      <Project>{DEED860F-BCA6-3915-AB06-7DFE943B594D}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\gamma.vcxproj">
+      <Project>{BBB0098F-2C6D-3D29-9B59-3856EDA3A1BA}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\gears.vcxproj">
+      <Project>{09146278-FD22-32FB-A458-36C77E938DCA}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{E4E87F9D-4BD9-34D1-BD8B-6A181244F94F}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\glfwinfo.vcxproj">
+      <Project>{DC3974DF-E286-3E71-83E6-04E4EF613BD2}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\heightmap.vcxproj">
+      <Project>{3A21C905-C1F1-3BAD-BD9E-393576C6EBA0}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\iconify.vcxproj">
+      <Project>{CB2CE5F6-707D-3CC1-BBB6-A48D7D55ADBB}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\joysticks.vcxproj">
+      <Project>{99D331BF-0448-3E94-B55C-3943D8DF0A06}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\monitors.vcxproj">
+      <Project>{210EF679-E0FB-3F4A-981E-D6F66895A0B5}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\msaa.vcxproj">
+      <Project>{8D06C083-B213-3F92-BFB9-967DED2A6F25}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\particles.vcxproj">
+      <Project>{BBFED7C2-3C77-393D-8EC0-F3F272A1D0B3}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\reopen.vcxproj">
+      <Project>{F745C55C-773A-3B60-8F37-C6EE069F0168}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\sharing.vcxproj">
+      <Project>{8C0CAD9E-5E5F-3445-8FBB-D21FBD1CCDC6}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\simple.vcxproj">
+      <Project>{0C774189-E5BA-35E5-BFCE-0A7621BF6EA5}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\splitview.vcxproj">
+      <Project>{9911D001-ECF0-3528-9485-FBCE8F777A0E}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\tearing.vcxproj">
+      <Project>{C6018436-56DF-3206-8965-AD76C02689BD}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\threads.vcxproj">
+      <Project>{DE0FC619-2729-3216-8C2C-22309D34B2EB}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\title.vcxproj">
+      <Project>{7861E18A-DB64-3DBA-80A1-AF8640359507}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\examples\wave.vcxproj">
+      <Project>{2B99E090-0460-3829-B287-CF1104383402}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\documents\ivan\pr\cpp\life\bin_143\external\glfw-3.1.2\tests\windows.vcxproj">
+      <Project>{9975820B-3047-3EA9-B78C-998DA6C2BC71}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
