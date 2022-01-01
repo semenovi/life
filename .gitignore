@@ -1,3 +1,18 @@
+**/*.dll
+**/*.exe
+build/*
+bin-*/*
+distrib/build_*/*
+**.bak
+**.orig
+screenshot.bmp
+*.pyc
+Thumbs.db
+OpenGL-tutorial_v*
+**.mtl
+.DS_Store
+
+
 # Created by https://www.gitignore.io/api/c++,cuda,windows,visualstudio
 
 ### C++ ###
